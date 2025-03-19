@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object Demo 2</title>
+</head>
+<body>
+    <script>
+        let empdata={
+            name : 'harsh',
+            salary : 5000,
+            3 : 'software developer',
+            location : "andheri"
+        }
+        // console.log("printing through for in ");
+        // for(let i in empdata)
+        // {
+        //     console.log(empdata[i]);
+        // }
+        // console.log("printing after updating");
+        // empdata.city="delhi";
+        // for(let i in empdata)
+        // {
+        //     console.log(empdata[i]);
+        // }
+
+        // let colors ={}
+        // colors.first="red";
+        // colors.second="second";
+        // console.log(colors);
+
+        console.log("adding data keys as function");
+        empdata.data=function()
+        {
+            return this.name+" "+this.salary
+        }
+        console.log(empdata.data());
+        
+    </script>
+</body>
+</html>
